@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Profile Card</title>
+    <style>
+     
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="images/sharp-sharp.jpg" alt="Profile Picture" data-testid="profilePicture">
+        <h2 data-testid="fullName">OLADIPUPO WISDOM BELLO</h2>
+        <h3 data-testid="jobTitle">Frontend Developer</h3>
+        <p data-testid="shortBio">Passionate web developer with experience in building user-friendly and accessible applications. Enthusiastic about modern web technologies and design.</p>
+        <p data-testid="currentLocation">Minna, Niger State</p>
+        <p data-testid="emailAddress">wisbel71@gmail.com</p>
+        <div class="social-links" data-testid="socialLinks">
+            <a href="https://www.linkedin.com/in/wisdom-oladipupo-34aa502a1/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/wisdomoladipupo" target="_blank">GitHub</a>
+            <a href="https://x.com/bello_wisd99724" target="_blank">Twitter</a>
+        </div>
+        <p id="utcTime" data-testid="currentTimeUTC"></p>
+    </div>
+    <script>
+        function updateUTCTime() {
+            const utcTimeElement = document.getElementById("utcTime");
+            const now = new Date();
+            utcTimeElement.textContent = `UTC Time: ${now.toUTCString()}`;
+        }
+        updateUTCTime();
+    </script>
+</body>
+</html>
