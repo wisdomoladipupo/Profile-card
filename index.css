@@ -1,13 +1,19 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #0c0b0b;
     font-family: Arial, sans-serif;
 }
+h1{
+    color: white;
+    font-size: 5em;
+}
 .profile-card {
-    background: white;
+    background: rgb(5, 156, 73);
+    color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -26,5 +32,6 @@ body {
 .social-links a {
     margin: 0 10px;
     text-decoration: none;
-    color: #0073b1;
+    font-weight: bold;
+    color: black;
 }
